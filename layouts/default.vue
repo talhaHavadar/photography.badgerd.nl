@@ -25,7 +25,7 @@
         </div>
         <Nuxt />
         <div
-            class="mt-8 flex h-[20vh] w-full flex-row flex-wrap justify-between border border-t-slate-300 bg-slate-100 p-8 subpixel-antialiased"
+            class="mt-8 flex min-h-[20vh] w-full flex-row flex-wrap justify-between border border-t-slate-300 bg-slate-100 p-8 subpixel-antialiased"
         >
             <div class="font-thin subpixel-antialiased">
                 <p class="font-medium">Badgerd Technologies B.V.</p>
