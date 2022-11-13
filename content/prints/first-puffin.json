@@ -1,0 +1,17 @@
+{
+    "description": "A pretty handsome Puffin is just landed infront of us in our last trip to Iceland. It will be a nice addition to your house or office if you are also a fan of animals like me!\n\nPhotograph is printed on ultra high quality paper(hahnemuhle) and being packaged carefully to provide you best service possible.",
+    "author": "Talha",
+    "location": "Iceland",
+    "variations": [
+        {
+            "size": "30x45cm",
+            "price": "70,00",
+            "payURL": "https://buy.stripe.com/28o157gEn2Ezf0kcMM"
+        },
+        {
+            "size": "20x30cm",
+            "price": "50,00",
+            "payURL": "https://buy.stripe.com/28o157gEn2Ezf0kcMM"
+        }
+    ]
+}

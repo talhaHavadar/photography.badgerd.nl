@@ -5,11 +5,20 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
+    script: [
+      { src: "https://www.google.com/recaptcha/api.js?render=6LcpogMjAAAAAFq6Owl0rSSWT0HUHuI_oN_KdUgi"}
+    ],
+    bodyAttrs: {
+      class: 'scrollbar-hide'
+    },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, minimal-ui' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes'},
+      { name: 'mobile-web-app-capable', content: 'yes'},
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -33,6 +42,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxt/postcss8',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,5 +70,14 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+  googleFonts: {
+    families: {
+      Montserrat: true
+    },
+    download: false
+  },
+  server: {
+    host: 'localhost'//'0' // default: localhost
   }
 }
