@@ -18,6 +18,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'apple-mobile-web-app-capable', content: 'yes'},
       { name: 'mobile-web-app-capable', content: 'yes'},
+      { name: 'facebook-domain-verification', content: 'sp5hsonya31xtbnlqhsyb8cbzbsypb'},
 
     ],
     link: [
