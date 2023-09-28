@@ -1,17 +1,21 @@
 {
-    "description": "An incredible view of blue iceberg creek. In our trip to Iceland, we wandered around in Glacier Lagoon and find out this incredible iceberg. Icebergs have this blue form under water but when it flips over the water, it keeps its blue color for several hours and then it becomes white again. So this is a quite good coincidence we got here!\n\nSupport my passion of photographing wildlife and nature by buying my prints.",
-    "author": "Talha",
+    "description": "Heart of The Iceberg, an incredible representation of diverse landscape of Iceland. When the Icebergs freshly broken, they look amazingly blue and it does not last for long. So here we were lucky to see this magical phenomenon come to life with amazing composition. \n\nLooking into the blue core of the giant iceberg was the highlight of our trip to Iceland.\n\nPlease handle the prints carefully since they are delicate fine art, borders of the print can be used to hold the paper safely. Borders will also help you easily frame the print, they will give more freedom. \n\nAll of my fine art prints are being printed on extra high quality paper, and carefully prepared for you.\n\nIf you have any questions please do not hesitate to reach me! Looking forward to hear from you!",
+    "author": "Talha Can Havadar (@badgerd.goes.wild)",
     "location": "Iceland",
+    "style": {
+        "min-height": "25vh"
+    },
+    "shipping": true,
     "variations": [
         {
-            "size": "45x30cm",
+            "size": "A3 (42x30cm)",
             "price": "80,00",
             "payURL": "https://buy.stripe.com/dR6cNP4VFgvp05q003"
         },
         {
-            "size": "30x20cm",
-            "price": "60,00",
-            "payURL": "https://buy.stripe.com/bIYbJL9bV2Ez4lG7su"
+            "size": "A2 (60x42cm)",
+            "price": "122,00",
+            "payURL": "https://buy.stripe.com/4gwbJL9bV6UP4lGbIU"
         }
     ]
 }
