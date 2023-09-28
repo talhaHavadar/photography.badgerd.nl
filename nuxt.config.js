@@ -1,7 +1,7 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'photography.badgerd.nl',
+        title: 'Badgerd Photography | Nature, Wildlife and Landscape Photographers',
         htmlAttrs: {
             lang: 'en',
         },
@@ -12,13 +12,24 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1, minimal-ui' },
-            { hid: 'description', name: 'description', content: '' },
-            { name: 'format-detection', content: 'telephone=no' },
+            {
+                hid: 'description',
+                name: 'description',
+                content:
+                    'Discover our favorite photographs and have a chance to buy our fine art prints. You can find us in instagram by @badgerd.goes.wild and @houstonwegotaphoto.',
+            },
             { name: 'apple-mobile-web-app-capable', content: 'yes' },
             { name: 'mobile-web-app-capable', content: 'yes' },
             { name: 'facebook-domain-verification', content: 'sp5hsonya31xtbnlqhsyb8cbzbsypb' },
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+            { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+            { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+            { rel: 'manifest', href: '/site.webmanifest' },
+            { hid: 'canonical', rel: 'canonical', href: 'https://photography.badgerd.nl' },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -44,6 +55,8 @@ export default {
         '@nuxtjs/axios',
         // https://go.nuxtjs.dev/content
         '@nuxt/content',
+        '@nuxtjs/sitemap',
+        '@nuxtjs/robots',
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -72,5 +85,14 @@ export default {
     },
     server: {
         host: 'localhost', // '0' // default: localhost
+    },
+    robots: {
+        UserAgent: '*',
+        Disallow: '',
+        Sitemap: 'https://photography.badgerd.nl/sitemap.xml',
+    },
+
+    sitemap: {
+        trailingSlash: true,
     },
 }
