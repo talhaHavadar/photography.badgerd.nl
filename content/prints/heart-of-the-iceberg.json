@@ -4,12 +4,12 @@
     "location": "Iceland",
     "variations": [
         {
-            "size": "45x30cm (Out: 47x32cm)",
+            "size": "45x30cm",
             "price": "80,00",
             "payURL": "https://buy.stripe.com/dR6cNP4VFgvp05q003"
         },
         {
-            "size": "30x20cm (Out: 32x22cm)",
+            "size": "30x20cm",
             "price": "60,00",
             "payURL": "https://buy.stripe.com/bIYbJL9bV2Ez4lG7su"
         }

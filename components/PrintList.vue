@@ -8,8 +8,8 @@
         </div>
         <div class="mt-24 flex w-full flex-grow flex-col items-center justify-around">
             <div class="flex w-[90%] flex-wrap items-stretch justify-center">
-                <NuxtLink class="m-2 w-96 items-stretch border border-slate-200 p-4" to="/iceberg-creek/detail">
-                    <img :src="require('~/assets/iceberg-creek/lq.jpg')" class="w-full" alt="" />
+                <NuxtLink class="m-2 w-96 items-stretch border border-slate-200 p-4" to="/heart-of-the-iceberg/detail">
+                    <img :src="require('~/assets/heart-of-the-iceberg/lq.jpg')" class="w-full" alt="" />
                     <p class="mt-2 text-center text-sm font-extralight subpixel-antialiased">
                         Heart of the Iceberg <span>| Iceland</span>
                     </p>
