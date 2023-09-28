@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="h-screen">
+        <div class="contents h-screen">
             <PrintList />
         </div>
         <!-- <div class="flex items-center justify-center p-4">
