@@ -95,4 +95,7 @@ export default {
         trailingSlash: true,
         routes: ['/heart-of-the-iceberg/detail', '/the-bird/detail'],
     },
+    publicRuntimeConfig: {
+        baseURL: process.env.BASE_URL || 'https://photography.badgerd.nl',
+    },
 }
