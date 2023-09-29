@@ -157,6 +157,7 @@ export default {
                     name: 'Badgerd Photography',
                     slogan: 'High Quality Wildlife, Nature and Landscape Photography Prints',
                 },
+
                 aggregateRating: {
                     '@type': 'AggregateRating',
                     ratingValue: 5,
@@ -188,6 +189,13 @@ export default {
                         price: 80,
                         sku: this.print + '-A3',
                         priceValidUntil: '2023-12-31',
+                        hasMerchantReturnPolicy: {
+                            '@type': 'MerchantReturnPolicy',
+                            returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+                            merchantReturnDays: 14,
+                            returnMethod: 'https://schema.org/ReturnByMail',
+                            returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
+                        },
                     },
                     {
                         '@type': 'Offer',
@@ -196,6 +204,13 @@ export default {
                         price: 122,
                         sku: this.print + '-A2',
                         priceValidUntil: '2023-12-31',
+                        hasMerchantReturnPolicy: {
+                            '@type': 'MerchantReturnPolicy',
+                            returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+                            merchantReturnDays: 14,
+                            returnMethod: 'https://schema.org/ReturnByMail',
+                            returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
+                        },
                     },
                 ],
             },
