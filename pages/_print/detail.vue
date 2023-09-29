@@ -145,7 +145,7 @@ export default {
         return [
             {
                 '@context': 'http://schema.org',
-                '@id': 'https://badgerd.nl/#' + this.print,
+                '@id': 'https://photography.badgerd.nl/#' + this.print,
                 '@type': 'Product',
                 url: `${this.$config.baseURL}${this.$route.path}`,
                 name: this.$options.filters.toTitleCase(this.print),
