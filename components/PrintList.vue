@@ -1,7 +1,7 @@
 <template>
-    <div class="flex w-screen flex-grow flex-col justify-center">
+    <div class="flex min-h-[100vh] w-screen flex-grow flex-col justify-center">
         <div class="mt-12 flex w-full flex-col items-center justify-center border-t-[1px] border-slate-200">
-            <h1 class="mt-8 text-4xl font-thin subpixel-antialiased">FINE ART PHOTOGRAPHY PRINTS</h1>
+            <h1 class="mt-8 text-center text-4xl font-thin subpixel-antialiased">FINE ART PHOTOGRAPHY PRINTS</h1>
             <p class="mx-4 mt-3 font-thin subpixel-antialiased">
                 We selected our the most beloved photos in each of our trips.
             </p>
