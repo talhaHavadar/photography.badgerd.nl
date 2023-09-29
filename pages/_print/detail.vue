@@ -23,7 +23,7 @@
                 <div class="mb-2 flex items-center">
                     <div>
                         <p class="text-2xl font-light subpixel-antialiased">€{{ selectedVariation.price }}</p>
-                        <p class="text-sm font-thin subpixel-antialiased" v-if="data.shipping">Shipping included</p>
+                        <p v-if="data.shipping" class="text-sm font-thin subpixel-antialiased">Shipping included</p>
                     </div>
                     <a
                         :href="selectedVariation.payURL"
@@ -70,7 +70,166 @@ export default {
         const print = params.print
         const data = await $content('prints', print, { deep: true }).fetch()
 
-        return { print, data, selectedVariation: data.variations[0], style: data.style }
+        return {
+            print,
+            data,
+            selectedVariation: data.variations[0],
+            style: data.style,
+            title: 'Amazing Wildlife, Landscape and Nature Fine Art Prints',
+            description: '',
+            image: 'https://photography.badgerd.nl/images/iceberg.jpg',
+        }
+    },
+    head() {
+        if (this.print === 'heart-of-the-iceberg') {
+            this.title = 'Heart Of The Iceberg in Iceland| Buy Fine Art Icelandic Landscape Photo Print'
+            this.description =
+                'An incredible representation of diverse landscape of Iceland. When the Icebergs freshly broken, they look amazingly blue and it does not last for long.'
+            this.image = 'https://photography.badgerd.nl/images/iceberg.jpg'
+        } else if (this.print === 'the-bird') {
+            this.title = 'Little Bird in Forest of Norway| Buy Fine Art Nordic Bird Photo Print'
+            this.description =
+                'An interesting pose of the small bird in Norway, when the rain drops to the forest birds come out, nature of norway is always interesting'
+            this.image = 'https://photography.badgerd.nl/images/the-bird.jpg'
+        }
+
+        return {
+            title: this.title,
+            link: [
+                {
+                    hid: 'canonical',
+                    rel: 'canonical',
+                    href: `${this.$config.baseURL}${this.$route.path}`,
+                },
+            ],
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.description,
+                },
+                {
+                    hid: 'og:title',
+                    property: 'og:title',
+                    content: this.$options.filters.toTitleCase(this.print),
+                },
+                {
+                    hid: 'og:description',
+                    property: 'og:description',
+                    content: this.description,
+                },
+                {
+                    hid: 'og:type',
+                    property: 'og:type',
+                    content: 'website',
+                },
+                {
+                    hid: 'og:image',
+                    property: 'og:image',
+                    content: this.image,
+                },
+                {
+                    hid: 'og:url',
+                    property: 'og:url',
+                    content: `${this.$config.baseURL}${this.$route.path}`,
+                },
+                {
+                    hid: 'og:locale',
+                    property: 'og:locale',
+                    content: 'en_US',
+                },
+            ],
+        }
+    },
+    jsonld() {
+        return [
+            {
+                '@context': 'http://schema.org',
+                '@id': 'https://badgerd.nl/#' + this.print,
+                '@type': 'Product',
+                url: `${this.$config.baseURL}${this.$route.path}`,
+                name: this.$options.filters.toTitleCase(this.print),
+                mainEntityOfPage: `${this.$config.baseURL}${this.$route.path}`,
+                image: this.image,
+                description: this.description,
+                brand: {
+                    logo: 'https://badgerd.nl/logo-nobg.png',
+                    name: 'Badgerd Photography',
+                    slogan: 'High Quality Wildlife, Nature and Landscape Photography Prints',
+                },
+                aggregateRating: {
+                    '@type': 'AggregateRating',
+                    ratingValue: 5,
+                    reviewCount: 1,
+                },
+                review: [
+                    {
+                        '@type': 'Review',
+                        author: {
+                            '@type': 'Person',
+                            name: 'Talha',
+                        },
+                        datePublished: '2023-09-19',
+                        reviewBody: 'Ultra high quality paper great photo!',
+                        name: 'First User',
+                        reviewRating: {
+                            '@type': 'Rating',
+                            bestRating: 5,
+                            ratingValue: 5,
+                            worstRating: 1,
+                        },
+                    },
+                ],
+                offers: [
+                    {
+                        '@type': 'Offer',
+                        priceCurrency: 'EUR',
+                        availability: 'https://schema.org/InStock',
+                        price: 80,
+                        sku: this.print + '-A3',
+                        priceValidUntil: '2023-12-31',
+                    },
+                    {
+                        '@type': 'Offer',
+                        priceCurrency: 'EUR',
+                        availability: 'https://schema.org/InStock',
+                        price: 122,
+                        sku: this.print + '-A2',
+                        priceValidUntil: '2023-12-31',
+                    },
+                ],
+            },
+            {
+                '@context': 'https://schema.org/',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    {
+                        '@type': 'ListItem',
+                        position: 1,
+                        name: 'Store',
+                        item: 'https://photography.badgerd.nl/store',
+                    },
+                    {
+                        '@type': 'ListItem',
+                        position: 2,
+                        name: 'The Bird',
+                        item: 'https://photography.badgerd.nl/the-bird/detail',
+                    },
+                    {
+                        '@type': 'ListItem',
+                        position: 3,
+                        name: 'Heart Of The Iceberg',
+                        item: 'https://photography.badgerd.nl/heart-of-the-iceberg/detail',
+                    },
+                    {
+                        '@type': 'ListItem',
+                        position: 4,
+                        name: 'Contact',
+                        item: 'https://photography.badgerd.nl/contact',
+                    },
+                ],
+            },
+        ]
     },
 }
 </script>

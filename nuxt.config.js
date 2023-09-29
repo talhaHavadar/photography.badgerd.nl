@@ -1,7 +1,7 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'Badgerd Photography | Nature, Wildlife and Landscape Photographers',
+        title: 'Badgerd Photography| Nature, Wildlife and Landscape Photographers',
         htmlAttrs: {
             lang: 'en',
         },
@@ -27,7 +27,6 @@ export default {
             { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
             { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
             { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-            { rel: 'manifest', href: '/site.webmanifest' },
             { hid: 'canonical', rel: 'canonical', href: 'https://photography.badgerd.nl' },
         ],
     },
@@ -36,7 +35,7 @@ export default {
     css: ['@/assets/css/main.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: ['~/plugins/jsonld'],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -94,5 +93,6 @@ export default {
 
     sitemap: {
         trailingSlash: true,
+        routes: ['/heart-of-the-iceberg/detail', '/the-bird/detail'],
     },
 }

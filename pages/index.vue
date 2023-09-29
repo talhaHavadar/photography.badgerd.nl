@@ -7,12 +7,12 @@
                 class="flex h-screen items-center justify-center bg-[url('~/assets/section1_overlayed.jpg')] bg-cover bg-fixed bg-top bg-no-repeat"
             >
                 <div class="text-center">
-                    <h1
+                    <p
                         class="cursor-default text-2xl font-light tracking-wider subpixel-antialiased sm:text-3xl md:text-5xl md:font-thin lg:text-6xl xl:text-7xl 2xl:text-8xl"
                     >
                         <span class="duration-500 hover:text-green-800">Nature|</span>
                         <span class="text-amber-800 duration-500">Wildlife</span> Photography
-                    </h1>
+                    </p>
                     <p
                         class="text-xl font-light subpixel-antialiased sm:text-2xl sm:font-light md:text-3xl md:font-thin lg:mt-5 lg:text-3xl xl:text-4xl 2xl:text-5xl"
                     >
