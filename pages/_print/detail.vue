@@ -13,10 +13,10 @@
                 class="w-full border border-slate-200 bg-cover p-4"
                 alt=""
             /> -->
-            <p class="mt-2 text-center text-lg font-thin subpixel-antialiased">
+            <h1 class="mt-2 text-center text-lg font-thin subpixel-antialiased">
                 {{ print | toTitleCase }} <br />
                 <span class="text-sm font-thin subpixel-antialiased">{{ data.author }}</span>
-            </p>
+            </h1>
         </div>
         <div class="flex w-[50%] min-w-[350px] flex-col justify-center p-4 sm:min-w-[550px]">
             <div class="flex w-full flex-col">
