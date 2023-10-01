@@ -1,6 +1,6 @@
 <template>
     <div class="flex min-h-screen flex-row flex-wrap items-center justify-around sm:p-32">
-        <div class="flex w-[30%] min-w-[350px] flex-col justify-center sm:min-w-[550px]">
+        <div class="flex w-[100%] flex-col justify-center p-4 sm:w-[30%] sm:min-w-[550px]">
             <div
                 class="w-auto bg-contain bg-center bg-no-repeat p-2"
                 :style="{
@@ -26,7 +26,7 @@
                 </span>
             </h1>
         </div>
-        <div class="flex w-[50%] min-w-[350px] flex-col justify-center p-4 sm:min-w-[550px]">
+        <div class="flex flex-col justify-center p-4 sm:w-[50%] sm:min-w-[550px]">
             <div class="flex w-full flex-col">
                 <div class="mb-2 flex items-center">
                     <div>
@@ -41,7 +41,7 @@
                     </a>
                 </div>
                 <hr class="my-4" />
-                <div class="mb-4 flex items-center">
+                <div class="mb-4 flex flex-wrap items-center">
                     <a
                         v-for="variation in data.variations"
                         :key="variation.size"
