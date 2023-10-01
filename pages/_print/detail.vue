@@ -42,7 +42,7 @@
                 </div>
                 <hr class="my-4" />
                 <div class="mb-4 flex items-center">
-                    <div
+                    <button
                         v-for="variation in data.variations"
                         :key="variation"
                         class="m-2 cursor-pointer rounded-sm border border-slate-400 p-3 hover:border-indigo-400"
@@ -54,7 +54,7 @@
                         "
                     >
                         {{ variation.size }}
-                    </div>
+                    </button>
                 </div>
             </div>
 
