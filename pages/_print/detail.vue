@@ -1,5 +1,5 @@
 <template>
-    <div class="flex min-h-screen flex-row flex-wrap items-center justify-around sm:p-32">
+    <div class="flex min-h-screen flex-row flex-wrap items-center justify-around pt-8 sm:p-32">
         <div class="flex w-[100%] flex-col justify-center p-4 sm:w-[30%] sm:min-w-[550px]">
             <div
                 class="w-auto bg-contain bg-center bg-no-repeat p-2"
