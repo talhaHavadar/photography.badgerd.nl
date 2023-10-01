@@ -44,7 +44,7 @@
                 <div class="mb-4 flex items-center">
                     <a
                         v-for="variation in data.variations"
-                        :key="variation"
+                        :key="variation.size"
                         class="m-2 cursor-pointer rounded-sm border border-slate-400 p-3 hover:border-indigo-400"
                         :class="{ 'border-indigo-600': variation == selectedVariation }"
                         @click="
@@ -72,6 +72,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import Vue2TouchEvents from 'vue2-touch-events'
+
+Vue.use(Vue2TouchEvents)
+
 export default {
     filters: {
         toTitleCase: function (s) {
@@ -104,6 +109,11 @@ export default {
             this.description =
                 'An interesting pose of the small bird in Norway, when the rain drops to the forest birds come out, nature of norway is always interesting'
             this.image = 'https://photography.badgerd.nl/images/the-bird.jpg'
+        } else if (this.print === 'red-mane') {
+            this.title = 'Red Mane| Buy Fine Art Deer Antlers Photo Print'
+            this.description =
+                'An unexpected confrontation with the elk in their natural environment. There was a lot of rain that day and you can see the traces of it on his mane'
+            this.image = 'https://photography.badgerd.nl/images/red-mane.jpg'
         }
 
         return {
