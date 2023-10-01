@@ -15,7 +15,15 @@
             /> -->
             <h1 class="mt-2 text-center text-lg font-thin subpixel-antialiased">
                 {{ print | toTitleCase }} <br />
-                <span class="text-sm font-thin subpixel-antialiased">{{ data.author }}</span>
+                <span class="text-sm font-thin subpixel-antialiased">
+                    <a
+                        v-if="data.author.includes('Talha')"
+                        target="_blank"
+                        href="https://instagram.com/badgerd.goes.wild?igshid=NGVhN2U2NjQ0Yg=="
+                        >{{ data.author }}</a
+                    >
+                    <a v-else href="https://www.instagram.com/houstonwegotaphoto/" target="_blank">{{ data.author }}</a>
+                </span>
             </h1>
         </div>
         <div class="flex w-[50%] min-w-[350px] flex-col justify-center p-4 sm:min-w-[550px]">

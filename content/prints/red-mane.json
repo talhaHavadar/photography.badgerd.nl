@@ -1,0 +1,26 @@
+{
+  "description": "Red Mane, is the name I chose for this image. An unexpected confrontation with the elk in their natural environment. There was a lot of rain that day and you can see the traces of it on his mane. One of my closest shot of deers. I love the details of his antler and the traces of the rain on his mane, yes you can see it, it is still wet.\n\nI hope you are also enjoying this as much as I do. This was the photo of the day of our visit to National Park in the Netherlands.",
+  "author": "Talha Can Havadar (@badgerd.goes.wild)",
+  "location": "The Netherlands",
+  "style": {
+      "min-height": "40vh"
+  },
+  "shipping": true,
+  "variations": [
+      {
+          "size": "A3 (30x42cm)",
+          "price": "80,00",
+          "payURL": "https://buy.stripe.com/dR629b0Fpenh6tO7sJ"
+      },
+      {
+          "size": "A2 (42x60cm)",
+          "price": "122,00",
+          "payURL": "https://buy.stripe.com/8wMeVXfAj6UP8BW9AQ"
+      },
+      {
+        "size": "A1 (60x84cm)",
+        "price": "162,00",
+        "payURL": "https://buy.stripe.com/3csbJLgEnfrl8BW6oD"
+      }
+  ]
+}

@@ -6,8 +6,17 @@
                 We selected our the most beloved photos in each of our trips.
             </p>
         </div>
-        <div class="mt-24 flex w-full flex-grow flex-col items-center justify-around">
+        <div class="mt-24 flex w-full flex-grow flex-col items-center justify-start">
             <div class="flex w-[90%] flex-wrap items-center justify-center">
+                <NuxtLink
+                    to="/red-mane/detail"
+                    class="m-2 mx-4 w-56 items-stretch border border-slate-200 p-4 duration-150 hover:bg-slate-50"
+                >
+                    <img :src="require('~/assets/red-mane/lq.jpg')" class="w-full" alt="" />
+                    <p class="mt-2 text-center text-sm font-extralight subpixel-antialiased">
+                        Red Mane <span>| The Netherlands</span>
+                    </p>
+                </NuxtLink>
                 <NuxtLink
                     class="m-2 mx-4 w-96 items-center border border-slate-200 p-4 duration-150 hover:bg-slate-50"
                     to="/heart-of-the-iceberg/detail"
