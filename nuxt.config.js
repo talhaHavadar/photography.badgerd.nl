@@ -92,8 +92,7 @@ export default {
     },
 
     sitemap: {
-        trailingSlash: true,
-        routes: ['/heart-of-the-iceberg/detail', '/the-bird/detail'],
+        routes: ['/heart-of-the-iceberg/detail', '/the-bird/detail', '/red-mane/detail'],
     },
     publicRuntimeConfig: {
         baseURL: process.env.BASE_URL || 'https://photography.badgerd.nl',
